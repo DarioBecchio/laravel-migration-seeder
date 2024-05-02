@@ -18,9 +18,9 @@ use App\Models\Train;
 
 Route::get('/', function () {
 
-    $trains = Train::all();
-
-    return view('welcome', compact('trains'));
+    //$trains = Train::all();
+    dd(Train::all());
+    return view('welcome');
 });
 
 
